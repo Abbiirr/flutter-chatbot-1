@@ -35,7 +35,7 @@ class _ChatScreenState extends State<ChatScreen> {
     // Send the request to the server
     try {
       final response = await http.post(
-        Uri.parse('http://localhost:8000/api/v1/query'),
+        Uri.parse('https://ad1c-103-92-153-10.ngrok-free.app/api/v1/query'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'question': userMessage}),
       );
